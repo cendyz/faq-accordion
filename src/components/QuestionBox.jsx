@@ -13,7 +13,15 @@ const QuestionBox = ({ questionBox }) => {
 			<div className='main__box-top'>
 				<h2 className='main__box-top-title'>{question}</h2>
 				<button onClick={toggleDisplay}>
-					<img src='src/assets/images/icon-plus.svg' alt='Plus icon' className='main__box-top-icon' />
+					{truly ? (
+						<>
+							<img src='src/assets/images/icon-minus.svg' alt='Minus icon' className='main__box-top-icon' />
+						</>
+					) : (
+						<>
+							<img src='src/assets/images/icon-plus.svg' alt='Plus icon' className='main__box-top-icon' />
+						</>
+					)}
 				</button>
 			</div>
 			{truly && (
@@ -21,6 +29,7 @@ const QuestionBox = ({ questionBox }) => {
 					<p className='main__box-bottom-text'>{answer}</p>
 				</div>
 			)}
+			{/*  */}
 		</section>
 	);
 };
