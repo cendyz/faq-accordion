@@ -88,7 +88,7 @@ body {
 @media (min-width: 992px) {
 	.main {
 		width: 44.355vw;
-		max-width: 640px;
+		max-width: 40em;
 		margin-top: 11vw;
 		padding: 1.8em;
 
@@ -98,7 +98,8 @@ body {
 				margin-bottom: 0.4em;
 
 				&-icon {
-					width: clamp(0.7em, calc(0.7em + ((29.76 - 11.2) * ((100vw - 996px) / (1440 - 996)))), 1.86em);
+					width: 7%;
+					max-width: 2.5em;
 					margin-right: 0.5em;
 				}
 			}

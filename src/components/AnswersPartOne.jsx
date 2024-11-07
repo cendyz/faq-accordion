@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { answers } from "../data";
+import minusIcon from "../images/icon-minus.svg";
+import plusIcon from "../images/icon-plus.svg";
 
 const AnswersPartOne = () => {
 	const [isActive, setIsActive] = useState(null);
@@ -17,9 +19,9 @@ const AnswersPartOne = () => {
 							<h2 className='main__box-top-title'>{question}</h2>
 							<button onClick={() => toggleDisplay(index)}>
 								{isActive === index ? (
-									<img src='src/assets/images/icon-minus.svg' alt='Minus icon' className='main__box-top-icon' />
+									<img src={minusIcon} alt='Minus icon' className='main__box-top-icon' />
 								) : (
-									<img src='src/assets/images/icon-plus.svg' alt='Plus icon' className='main__box-top-icon' />
+									<img src={plusIcon} alt='Plus icon' className='main__box-top-icon' />
 								)}
 							</button>
 						</div>
